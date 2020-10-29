@@ -1,3 +1,12 @@
-.gnav {
+.g-nav {
 
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 4px 16px;
+    font-weight: 700;
+  }
 }

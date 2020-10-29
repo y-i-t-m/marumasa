@@ -8,15 +8,93 @@ const meta = {
 %>
 
 <%- include(`${meta.path}@include/_header`, {meta: meta}) %>
-<main class="l-main" role="main">
-    <i class="fas fa-chevron-right fa-2x"></i>
-    <img src="<%- meta.path %>img/slide3.JPG" width="750" height="500" decoding="async" alt="">
-    <a href="./about">アバウト</a>
-
-
-    <div class="relative">
-        <div class="absolute-xy"></div>
+<section class="hero">
+    <div class="hero__inner">
+        <img class="hero__img" src="<%- meta.path %>img/top_hero.png" width="750" height="500" decoding="async"
+             alt="">
+        <img class="hero__text-img" src="<%- meta.path %>img/top_hero_text.png" alt="瀬戸内の音戸から新鮮な牡蠣をお届けします。">
+        <img class="hero__act" src="<%- meta.path %>img/top_hero_act.png" alt="">
     </div>
-</main>
+</section>
+<section class="l-section">
+    <div class="l-section__inner">
+        <div class="container">
 
+            <div class="news">
+                <div class="news__inner">
+                    <div class="news__head">
+                        <h2><img class="_w-auto" src="<%- meta.path %>img/news.png" alt="お知らせ"></h2>
+                        <div class="news__more">
+                            <a href="">一覧を見る<img class="_w-auto _d-inline-block _ml-16"
+                                                 src="<%- meta.path %>/img/chevron_blue.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="news__box">
+                        <div class="news__meta">
+                            <div class="news__time">
+                                <time datetime="2020-00-00">2020.00.00</time>
+                            </div>
+                            <a href="" class="news__category">お知らせ</a>
+                        </div>
+                        <div class="news__main">
+                            <h3 class="news__title"><img class="_w-auto _d-inline-block _mr-8"
+                                                         src="<%- meta.path %>img/chevron_blue.png" alt="">年末年始の営業時間について（ダミー）
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="news__box">
+                        <div class="news__meta">
+                            <div class="news__time">
+                                <time datetime="2020-00-00">2020.00.00</time>
+                            </div>
+                            <a href="" class="news__category">お知らせ</a>
+                        </div>
+                        <div class="news__main">
+                            <h3 class="news__title"><img class="_w-auto _d-inline-block _mr-8"
+                                                         src="<%- meta.path %>img/chevron_blue.png" alt="">年末年始の営業時間について（ダミー）
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="news__box">
+                        <div class="news__meta">
+                            <div class="news__time">
+                                <time datetime="2020-00-00">2020.00.00</time>
+                            </div>
+                            <a href="" class="news__category">お知らせ</a>
+                        </div>
+                        <div class="news__main">
+                            <h3 class="news__title"><img class="_w-auto _d-inline-block _mr-8"
+                                                         src="<%- meta.path %>img/chevron_blue.png" alt="">年末年始の営業時間について（ダミー）
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="l-section">
+    <div class="l-section__inner">
+        <div class="container">
+            <div class="top-box">
+                <div class="top-box__inner">
+                    <div class="top-box__left">
+                        <h2><img src="<%- meta.path %>/img/maru_catch.png" alt="マルマサ自慢の広島牡蠣"></h2>
+                        <div class="top-box__text">
+                            <p>マルマサ水産の手間を惜しまず、<br>熟成されたこだわりの育成技術で新鮮で良質の牡蠣をお客様にご賞味いただけるよう日々精進しています。</p>
+                            <div class="_mt-24">
+                                <a href="" class="more-button">もっと読む<img class="more-button__icon _w-auto"
+                                                                         src="<%- meta.path %>img/chevron_blue.png"
+                                                                         alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-box__right">
+                        <img src="<%- meta.path %>img/kaki_01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <%- include(`${meta.path}@include/_footer`, {meta: meta}) %>

@@ -7,43 +7,48 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="<%- meta.description %>">
     <% if (meta.type === 'home') { %>
-        <title>株式会社マルマサ水産</title>
+    <title>株式会社マルマサ水産</title>
     <% } else { %>
-        <title><%- meta.title %> | 株式会社マルマサ水産</title>
+    <title><%- meta.title %> | 株式会社マルマサ水産</title>
     <% } %>
-    <link rel="icon" href="<%- meta.path %>img/favicon.svg" type="image/svg+xml">
-    <meta property="og:url" content="ページのURL" />
-    <meta property="og:title" content="<%- meta.title %>" />
+    <link rel="icon" href="<%- meta.path %>img/favicon.ico">
+    <meta property="og:url" content="ページのURL"/>
+    <meta property="og:title" content="<%- meta.title %>"/>
     <meta property="og:type" content="website">
-    <meta property="og:description" content="<%- meta.description %>" />
-    <meta property="og:image" content="<%- meta.path %>img/ogp.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@Twitterユーザー名" />
-    <meta property="og:site_name" content="サイト名" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta property="fb:app_id" content="appIDを入力" />
-    <link rel="canonical" href="" />
-    <link rel="apple-touch-icon-precomposed" href="" /> <!-- スマホ用アイコン画像（150×150）推奨 -->
+    <meta property="og:description" content="<%- meta.description %>"/>
+    <meta property="og:image" content="<%- meta.path %>img/ogp.png"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Twitterユーザー名"/>
+    <meta property="og:site_name" content="サイト名"/>
+    <meta property="og:locale" content="ja_JP"/>
+    <meta property="fb:app_id" content="appIDを入力"/>
+    <link rel="canonical" href=""/>
+    <link rel="apple-touch-icon-precomposed" href=""/> <!-- スマホ用アイコン画像（150×150）推奨 -->
     <link rel="stylesheet" href="<%- meta.path %>style.css">
 </head>
 <body>
 <header class="l-header" role="banner">
+
     <div class="l-header__inner">
         <div class="l-header__left">
-            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img" src="<%- meta.path %>" alt="株式会社マルマサ水産"></a></h1>
+            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img" src="<%- meta.path %>img/logo.png"
+                                                                       alt="株式会社マルマサ水産"></a></h1>
         </div>
-        <nav class="g-nav">
-            <ul class="g-nav__list">
-                <li class="g-nav__item"><a href="" class="g-nab__link">マルマサの牡蠣とは</a></li>
-                <li class="g-nav__item"><a href="" class="g-nab__link">牡蠣のいろいろ情報</a></li>
-                <li class="g-nav__item"><a href="" class="g-nab__link">お知らせ</a></li>
-                <li class="g-nav__item"><a href="" class="g-nab__link">配送について</a></li>
-                <li class="g-nav__item"><a href="" class="g-nab__link">お問い合わせ</a></li>
-                <li class="g-nav__item"><a href="" class=""><img src="<%- meta.path %>" alt="お買い物はこちらからのボタン"></a></li>
-            </ul>
-        </nav>
+        <div class="l-header__right">
+            <nav class="g-nav">
+                <ul class="g-nav__list">
+                    <li class="g-nav__item"><a href="<%- meta.path %>about/" class="g-nav__link">マルマサの牡蠣とは</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>info/" class="g-nav__link">牡蠣のいろいろ情報</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>news/" class="g-nav__link">お知らせ</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link">配送について</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link">お問い合わせ</a></li>
+                    <li class="g-nav__item"><a href="https://marumasa.raku-uru.jp/" class="_ml-16" target="_blank"
+                                               rel="noopener noreferrer"><img src="<%- meta.path %>img/nav_buy_button.png"
+                                                                              alt="お買い物はこちらからのボタン"></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
-<a href="#" class="return-button" aria-label="ページトップへ移動" data-scroll>
-    <img src="<%- meta.path %>" alt="ページトップへ">
-</a>
+<main class="l-main" role="main">
+<img class="hero__bg" src="<%- meta.path %>img/hero_haikei.png" alt="">

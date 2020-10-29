@@ -1,0 +1,26 @@
+.hero {
+
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: auto;
+  }
+
+  &__text-img {
+    @include position(y);
+    left: 8%;
+    width: auto;
+  }
+  &__act {
+    position: absolute;
+    right: -8px;
+    bottom: -28px;
+    width: auto;
+  }
+}

@@ -1,0 +1,32 @@
+.contact {
+
+  &__inner {
+    padding: 48px 0 32px;
+  }
+
+  &__bg {
+    position: relative;
+  }
+
+  &__box {
+    @include position();
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__link {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 48px;
+    border: 1px solid #fff;
+  }
+}

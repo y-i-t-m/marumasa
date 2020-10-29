@@ -1,0 +1,45 @@
+.news {
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+  }
+
+  &__more {
+    margin-left: auto;
+  }
+  &__time {
+    font-size: rem(10);
+    color: color(gray-text);
+  }
+
+  &__box {
+    padding: 24px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__main {
+    margin-top: 8px;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__category {
+    font-size: rem(12);
+    color: color(act);
+    padding: 0 8px;
+    text-align: center;
+    width: 120px;
+    border: 1px solid color(act);
+    border-radius: 16px;
+    margin-left: 16px;
+  }
+}
