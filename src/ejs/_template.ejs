@@ -1,0 +1,21 @@
+<!--このファイルをコピーして新しくページを作成できます。-->
+
+<%
+const meta = {
+    title: 'アバウト',
+    type: "type",
+    path: '../',
+    description: "アバウトの説明が入ります。"
+}
+%>
+
+<%- include(`${meta.path}@include/_header`, {meta: meta}) %>
+
+
+<main class="l-main" role="main">
+    <i class="fas fa-chevron-right fa-1x"></i>
+    <img src="<%- meta.path %>img/slide3.JPG" width="750" height="500" decoding="async" alt="">
+    <a href="/">トップへ戻る</a>
+</main>
+
+<%- include(`${meta.path}@include/_footer`, {meta: meta}) %>

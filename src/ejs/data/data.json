@@ -1,0 +1,18 @@
+{
+  "data": {
+    "pageMeta": {
+      "home": {
+        "title": "トップページ",
+        "type": "home",
+        "path": "./",
+        "description": "トップページの説明が入ります。"
+      },
+      "about": {
+        "title": "Aboutページ",
+        "type": "about",
+        "path": "../",
+        "description": "aboutページの説明が入ります。"
+      }
+    }
+  }
+}

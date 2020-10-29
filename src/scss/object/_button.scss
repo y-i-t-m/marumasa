@@ -1,0 +1,8 @@
+.button {
+  min-height: 72px;
+  @include flex(xy);
+
+  &.-radius {
+    border-radius: 12px;
+  }
+}

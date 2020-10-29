@@ -1,0 +1,13 @@
+.return-button {
+  position: fixed;
+  right: 0;
+  bottom: 2%;
+  display: inline-block;
+  font-size: rem(12);
+  width: 64px;
+  height: 64px;
+  @include flex(xy);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: z-index(return-button);
+}

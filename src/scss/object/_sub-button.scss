@@ -1,0 +1,9 @@
+.sub-button {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 20px;
+  @include flex(xy);
+  @include  breakpoint-down(md) {
+    width: 100%;
+  }
+}
