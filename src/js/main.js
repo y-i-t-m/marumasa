@@ -8,10 +8,12 @@ import whatInput from 'what-input';
 import smoothScroll from "./modules/smoothscroll";
 import slider from "./modules/swiper";
 import observerJs from "./modules/intersection";
+import hamBtn from "./modules/hamburger";
 
 window.addEventListener("DOMContentLoaded", (e) => {
   smoothScroll();
   picturefill();
   slider();
   observerJs();
+  hamBtn();
 });

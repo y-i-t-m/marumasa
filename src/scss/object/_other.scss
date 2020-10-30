@@ -2,6 +2,11 @@
   position: absolute;
   right: 0;
   top: -72px;
+  @include breakpoint-down(md) {
+    //display: none;
+    width: 160px;
+    top: 0;
+  }
 }
 
 .info-box {
