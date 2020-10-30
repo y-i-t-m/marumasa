@@ -14,6 +14,19 @@
 ._fwb {
   font-weight: bold;
 }
+._lh-2 {
+  line-height: 2;
+}
+._lh-3 {
+  line-height: 3;
+}
+._lh-25 {
+  line-height: 2.5;
+}
+
+._ls-100 {
+  letter-spacing: ls(100);
+}
 .relative {
   position: relative;
 }

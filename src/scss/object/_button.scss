@@ -13,4 +13,9 @@
     @include position(y);
     right: 32px;
   }
+
+  &.-info {
+    max-width: 418px;
+    padding: 24px;
+  }
 }

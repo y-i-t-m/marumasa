@@ -1,30 +1,55 @@
 .l-footer {
   width: 100%;
-  padding: 32px 0;
+  padding: 64px 0;
   border-top: 2px solid #ddd;
   background-color: #f8f8f8;
+  @include breakpoint-down(md) {
+    padding: 32px 0;
+  }
   &__inner {
     width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    @include breakpoint-down(ml){
+      display: block;
+    }
   }
 
   &__address {
     margin-left: 24px;
+    @include breakpoint-down(ml) {
+      margin-left: 0;
+      margin-top: 32px;
+    }
+  }
+
+  &__logo {
+    @include breakpoint-down(ml) {
+      width: 100%;
+      max-width: 232px;
+    }
   }
 
   &__left {
     display: flex;
     align-items: center;
+    @include breakpoint-down(ml) {
+      display: block;
+    }
   }
 
   &__right {
     margin-left: auto;
     text-align: right;
+    @include  breakpoint-down(ml) {
+      margin-top: 32px;
+      text-align: left;
+    }
   }
 
   &__copy {
-    font-size: rem(14);
+    font-size: rem(12);
+    margin-top: 8px;
   }
 }

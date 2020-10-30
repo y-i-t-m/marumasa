@@ -1,8 +1,21 @@
 .g-nav {
+  @include breakpoint-down(ml) {
+    display: none;
+  }
 
   &__list {
     display: flex;
     align-items: center;
+    @include breakpoint-down(lg) {
+      justify-content: center;
+      margin-top: 16px;
+    }
+  }
+
+  &__item {
+    @include breakpoint-down(lg) {
+      text-align: center;
+    }
   }
 
   &__link {

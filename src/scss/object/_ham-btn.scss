@@ -1,0 +1,69 @@
+.ham-btn {
+  width: rem(64);
+  height: rem(64);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: z-index(ham-btn);
+  background-color: transparent;
+
+  &.-fix {
+    position: fixed;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(28);
+    height: 1px;
+    background-color: #212121;
+    transition: inherit;
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      transition: inherit;
+    }
+
+    &:before {
+      top: rem(-10);
+    }
+
+    &:after {
+      top: rem(10);
+    }
+  }
+
+  &[aria-expanded="true"] .ham-btn__line {
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      top: 0;
+      background-color: #212121;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}

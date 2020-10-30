@@ -1,0 +1,83 @@
+.set-img {
+  position: absolute;
+  right: 0;
+  top: -72px;
+}
+
+.info-box {
+  background-image: url(./img/bg_01.gif);
+  background-repeat: no-repeat;
+  &__women {
+    width: 182px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    @include  breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.category-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 50%;
+  @include breakpoint-down(md) {
+    width: 100%;
+  }
+
+  &__link {
+    text-decoration: underline;
+    margin-top: 12px;
+    margin-left: 24px;
+    font-weight: 700;
+    @include breakpoint-down(md) {
+      margin-top: 16px;
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.-border {
+  border-bottom: 1px solid color(main);
+}
+
+.buy-button {
+  width: 100%;
+  max-width: 450px;
+}
+
+.border-box {
+  position: relative;
+  @include breakpoint-down(md) {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    border-left: 2px dotted #333;
+    position: absolute;
+    top: 0;
+    transform: rotate(-35deg);
+    width: 2px;
+    height: 64px;
+  }
+
+  &::after {
+    transform: rotate(35deg);
+    right: 0;
+  }
+}

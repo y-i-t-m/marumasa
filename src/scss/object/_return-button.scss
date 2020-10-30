@@ -1,13 +1,17 @@
 .return-button {
   position: fixed;
-  right: 0;
-  bottom: 2%;
+  right: 40px;
+  bottom: 40px;
   display: inline-block;
-  font-size: rem(12);
-  width: 64px;
-  height: 64px;
-  @include flex(xy);
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  width: auto;
   z-index: z-index(return-button);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s;
+
+  &.-active {
+    opacity: 1;
+    visibility: visible;
+  }
 }

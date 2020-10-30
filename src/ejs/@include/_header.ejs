@@ -28,10 +28,10 @@
 </head>
 <body>
 <header class="l-header" role="banner">
-
     <div class="l-header__inner">
         <div class="l-header__left">
-            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img" src="<%- meta.path %>img/logo.png"
+            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img"
+                                                                       src="<%- meta.path %>img/logo.png"
                                                                        alt="株式会社マルマサ水産"></a></h1>
         </div>
         <div class="l-header__right">
@@ -43,12 +43,51 @@
                     <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link">配送について</a></li>
                     <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link">お問い合わせ</a></li>
                     <li class="g-nav__item"><a href="https://marumasa.raku-uru.jp/" class="_ml-16" target="_blank"
-                                               rel="noopener noreferrer"><img src="<%- meta.path %>img/nav_buy_button.png"
-                                                                              alt="お買い物はこちらからのボタン"></a></li>
+                                               rel="noopener noreferrer"><img
+                                    src="<%- meta.path %>img/nav_buy_button.png"
+                                    alt="お買い物はこちらからのボタン"></a></li>
                 </ul>
             </nav>
+            <button id="js-ham-btn" class="ham-btn" type="button" aria-expanded="false" aria-label="メニューを開く場合はこちら">
+        <span class="ham-btn__inner">
+          <span class="ham-btn__line"></span>
+          <span class="ham-btn__line"></span>
+          <span class="ham-btn__line"></span>
+        </span>
+            </button>
         </div>
     </div>
 </header>
+<div id="fade_header" class="fade-header">
+    <div class="l-header__inner">
+        <div class="l-header__left">
+            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img"
+                                                                       src="<%- meta.path %>img/logo_black.png"
+                                                                       alt="株式会社マルマサ水産"></a></h1>
+        </div>
+        <div class="l-header__right">
+            <nav class="g-nav">
+                <ul class="g-nav__list">
+                    <li class="g-nav__item"><a href="<%- meta.path %>about/" class="g-nav__link">マルマサの牡蠣とは</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>info/" class="g-nav__link">牡蠣のいろいろ情報</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>news/" class="g-nav__link">お知らせ</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link">配送について</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link">お問い合わせ</a></li>
+                    <li class="g-nav__item"><a href="https://marumasa.raku-uru.jp/" class="_ml-16" target="_blank"
+                                               rel="noopener noreferrer"><img
+                                    src="<%- meta.path %>img/nav_buy_button.png"
+                                    alt="お買い物はこちらからのボタン"></a></li>
+                </ul>
+            </nav>
+            <button id="js-ham-btn" class="ham-btn" type="button" aria-expanded="false" aria-label="メニューを開く場合はこちら">
+        <span class="ham-btn__inner">
+          <span class="ham-btn__line"></span>
+          <span class="ham-btn__line"></span>
+          <span class="ham-btn__line"></span>
+        </span>
+            </button>
+        </div>
+    </div>
+</div>
 <main class="l-main" role="main">
-<img class="hero__bg" src="<%- meta.path %>img/hero_haikei.png" alt="">
+    <img class="hero__bg" src="<%- meta.path %>img/hero_haikei.png" alt="">

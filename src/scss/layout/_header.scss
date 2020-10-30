@@ -1,18 +1,41 @@
 .l-header {
   width: 100%;
+  position: relative;
+
   &__inner {
     display: flex;
     align-items: center;
     width: 90%;
     margin: 0 auto;
     padding: 24px 0;
+    @include breakpoint-down(lg) {
+      display: block;
+    }
   }
 
   &__left {
-
+    @include breakpoint-down(lg) {
+      width: 100%;
+      max-width: 232px;
+    }
   }
 
   &__right {
     margin-left: auto;
+  }
+}
+
+.fade-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+  background-color: #fff;
+  z-index: 10;
+  &.-active {
+    opacity: 1;
+    visibility: visible;
   }
 }

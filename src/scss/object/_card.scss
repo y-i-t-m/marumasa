@@ -1,0 +1,42 @@
+.card {
+
+  &__inner {
+
+  }
+
+  &__header{
+
+  }
+
+  &__thumbnail {
+    position: relative;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: auto;
+  }
+
+  &__rank-img {
+    position: absolute;
+    top: -32px;
+    left: -32px;
+    width: 96px;
+    @include breakpoint-down(md) {
+      @include position(x);
+    }
+  }
+
+  &__title {
+    padding: 16px 0;
+    font-weight: 700;
+    border-bottom: 1px dotted #979797;
+  }
+
+  &__body {
+    padding: 16px 0;
+    color: #979797;
+  }
+}
