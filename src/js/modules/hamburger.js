@@ -8,10 +8,10 @@ export default function hamBtn() {
     if (button.getAttribute("aria-expanded") === "false") {
       button.setAttribute("aria-expanded", true);
       // button.classList.add("-fix");
-      // gnav.classList.add("-ham-active")
+      gnav.classList.add("-ham-active")
     } else {
       button.setAttribute("aria-expanded", false);
-      // gnav.classList.remove("-ham-active")
+      gnav.classList.remove("-ham-active")
       // button.classList.remove("-fix");
     }
   });
@@ -22,11 +22,11 @@ export default function hamBtn() {
       if (button.getAttribute("aria-expanded") === "false") {
         button.setAttribute("aria-expanded", true);
         // button.classList.add("-fix");
-        // gnav.classList.add("-ham-active")
+        gnav.classList.add("-ham-active")
       } else {
         button.setAttribute("aria-expanded", false);
         // gnav.classList.remove("-ham-active")
-        // button.classList.remove("-fix");
+        button.classList.remove("-fix");
       }
     });
   }

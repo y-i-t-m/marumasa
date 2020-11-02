@@ -2,6 +2,15 @@
   width: 100%;
   position: relative;
 
+  &.-active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+  }
+
   &__inner {
     display: flex;
     align-items: center;

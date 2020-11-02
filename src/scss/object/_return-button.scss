@@ -1,9 +1,9 @@
 .return-button {
-  position: fixed;
-  right: 40px;
+  position: sticky;
+  left: 90%;
   bottom: 40px;
   display: inline-block;
-  width: auto;
+  width: 100px;
   z-index: z-index(return-button);
 
   opacity: 0;

@@ -17,3 +17,4 @@ window.addEventListener("DOMContentLoaded", (e) => {
   observerJs();
   hamBtn();
 });
+

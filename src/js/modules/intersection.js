@@ -1,5 +1,7 @@
 const fixButton = document.getElementById("fix_button");
-const fadeHeader = document.getElementById("fade_header");
+const Header = document.getElementById("header");
+const logo = document.getElementById("logo");
+const main = document.getElementById("main");
 
 export default function observerJs() {
   const options = {
@@ -13,11 +15,13 @@ export default function observerJs() {
       if (entry.isIntersecting) {
         //  ここに要素が交差した際の動作を記述
         fixButton.classList.add("-active")
-        fadeHeader.classList.add("-active")
+        Header.classList.add("-active")
+        logo.setAttribute("src","./img/logo_black.png")
         // observer.unobserve(entry.target);
       } else {
         fixButton.classList.remove("-active")
-        fadeHeader.classList.remove("-active")
+        Header.classList.remove("-active")
+        logo.setAttribute("src","./img/logo.png")
       }
     });
   };
@@ -26,3 +30,19 @@ export default function observerJs() {
   observer.observe(el);
 }
 // observer.unobserve(entry.target);
+
+// const logo = document.getElementById("logo");
+// const scrollAnimationElm = document.querySelectorAll('.sa');
+// export default function observerJs() {
+//   const scrollAnimationFunc = function () {
+//     for (let i = 0; i < scrollAnimationElm.length; i++) {
+//       let triggerMargin = 200;
+//       if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+//         scrollAnimationElm[i].classList.add('-show');
+//         logo.setAttribute("src", "./img/logo_black.png")
+//       }
+//     }
+//   };
+//   window.addEventListener('load', scrollAnimationFunc);
+//   window.addEventListener('scroll', scrollAnimationFunc);
+

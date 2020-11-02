@@ -7,6 +7,10 @@
     width: 100%;
   }
 
+  &__inner {
+    position: relative;
+  }
+
   &__bg {
     position: absolute;
     top: 0;
@@ -44,7 +48,7 @@
   &__act {
     position: absolute;
     right: -1%;
-    bottom: -5%;
+    bottom: -10%;
     width: 80%;
     @include breakpoint-down(ml) {
       width: 100%;

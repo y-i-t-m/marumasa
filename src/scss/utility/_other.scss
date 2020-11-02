@@ -33,6 +33,10 @@
 .upper-case {
   text-transform: uppercase;
 }
+
+.-yuuai {
+  @include font(Yuuai);
+}
 .absolute-xy {
   @include position(xy);
 }

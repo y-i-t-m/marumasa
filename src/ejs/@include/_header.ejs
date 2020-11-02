@@ -13,7 +13,11 @@
     <% } %>
     <link rel="icon" href="<%- meta.path %>img/favicon.ico">
     <meta property="og:url" content="ページのURL"/>
-    <meta property="og:title" content="<%- meta.title %>"/>
+    <% if (meta.type === 'home') { %>
+    <meta property="og:title" content="株式会社マルマサ水産"/>
+    <% } else { %>
+    <meta property="og:title" content="<%- meta.title %> | 株式会社マルマサ水産"/>
+    <% } %>
     <meta property="og:type" content="website">
     <meta property="og:description" content="<%- meta.description %>"/>
     <meta property="og:image" content="<%- meta.path %>img/ogp.png"/>
@@ -27,21 +31,21 @@
     <link rel="stylesheet" href="<%- meta.path %>style.css">
 </head>
 <body>
-<header class="l-header" role="banner">
+<header id="header" class="l-header sa" role="banner">
     <div class="l-header__inner">
         <div class="l-header__left">
-            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img"
+            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img id="logo" class="l-header__img"
                                                                        src="<%- meta.path %>img/logo.png"
                                                                        alt="株式会社マルマサ水産"></a></h1>
         </div>
         <div class="l-header__right">
             <nav class="g-nav">
                 <ul class="g-nav__list">
-                    <li class="g-nav__item"><a href="<%- meta.path %>about/" class="g-nav__link">マルマサの牡蠣とは</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>info/" class="g-nav__link">牡蠣のいろいろ情報</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>news/" class="g-nav__link">お知らせ</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link">配送について</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link">お問い合わせ</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>about.html" class="g-nav__link">マルマサの牡蠣とは</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>info/" class="g-nav__link -gray-out">牡蠣のいろいろ情報</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>news/" class="g-nav__link -gray-out">お知らせ</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link -gray-out">配送について</a></li>
+                    <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link -gray-out">お問い合わせ</a></li>
                     <li class="g-nav__item"><a href="https://marumasa.raku-uru.jp/" class="_ml-16" target="_blank"
                                                rel="noopener noreferrer"><img
                                     src="<%- meta.path %>img/nav_buy_button.png"
@@ -58,29 +62,28 @@
         </div>
     </div>
 </header>
-<div id="fade_header" class="fade-header">
-    <div class="l-header__inner">
-        <div class="l-header__left">
-            <h1 class="l-header__logo"><a href="<%- meta.path %>"><img class="l-header__img"
-                                                                       src="<%- meta.path %>img/logo_black.png"
-                                                                       alt="株式会社マルマサ水産"></a></h1>
-        </div>
-        <div class="l-header__right">
-            <nav class="g-nav">
-                <ul class="g-nav__list">
-                    <li class="g-nav__item"><a href="<%- meta.path %>about/" class="g-nav__link">マルマサの牡蠣とは</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>info/" class="g-nav__link">牡蠣のいろいろ情報</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>news/" class="g-nav__link">お知らせ</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>delivery/" class="g-nav__link">配送について</a></li>
-                    <li class="g-nav__item"><a href="<%- meta.path %>contact/" class="g-nav__link">お問い合わせ</a></li>
-                    <li class="g-nav__item"><a href="https://marumasa.raku-uru.jp/" class="_ml-16" target="_blank"
-                                               rel="noopener noreferrer"><img
-                                    src="<%- meta.path %>img/nav_buy_button.png"
-                                    alt="お買い物はこちらからのボタン"></a></li>
-                </ul>
-            </nav>
-        </div>
+<div id="gnav" class="hamburger-nav">
+    <div class="hamburger-nav__inner">
+        <nav>
+            <ul class="hamburger-nav__list">
+                <li class="hamburger-nav__item"><a href="<%- meta.path %>about.html"
+                                                   class="hamburger-nav__link">マルマサの牡蠣とは</a></li>
+                <li class="hamburger-nav__item"><a href="<%- meta.path %>"
+                                                   class="hamburger-nav__link -gray-out">牡蠣のいろいろ情報</a></li>
+                <li class="hamburger-nav__item"><a href="<%- meta.path %>" class="hamburger-nav__link">お知らせ</a>
+                </li>
+                <li class="hamburger-nav__item"><a href="<%- meta.path %>"
+                                                   class="hamburger-nav__link -gray-out">配送について</a></li>
+                <li class="hamburger-nav__item"><a href="<%- meta.path %>"
+                                                   class="hamburger-nav__link -gray-out">お問い合わせ</a></li>
+                <li class="hamburger-nav__item _pt-16 _pb-16"><a href="https://marumasa.raku-uru.jp/" class="buy-button_02" target="_blank"
+                                                   rel="noopener noreferrer"><img
+                                src="<%- meta.path %>img/nav_buy_button.png"
+                                alt="お買い物はこちらからのボタン"></a></li>
+            </ul>
+        </nav>
     </div>
 </div>
-<main class="l-main" role="main">
+
+<main id="main" class="l-main" role="main">
     <img class="hero__bg" src="<%- meta.path %>img/hero_haikei.png" alt="">

@@ -1,6 +1,6 @@
  @font-face {
-   font-family: "Fork";
-   src: url("./font/A-OTF-FolkPro-Bold.otf") format("opentype")
+   font-family: "yuuai";
+   src: url("./font/KsoYuaiN.otf") format("opentype");
  }
 
 $fonts: (
@@ -42,8 +42,8 @@ $fonts: (
       normal: 400,
     )
   ),
-  Fork:(
-    family: "Fork, sans-serif",
+  Yuuai:(
+    family: "yuuai, sans-serif",
     weights: (
       normal: 400,
       bold: 700,
